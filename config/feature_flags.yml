@@ -1,0 +1,4 @@
+feature_flags:
+  green_flag: true
+  blue_flag: true
+  red_flag: true
