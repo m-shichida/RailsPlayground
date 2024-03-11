@@ -1,6 +1,6 @@
 <div style='margin-bottom: 8px;'>
   <%= form_with url: apply_feature_flags_path do |f| %>
-    <%= f.select :feature_flag, feature_flags %>
+    <%= f.select :feature_flag, feature_flags,  { selected: FeatureFlag.new.current_flag } %>
     <%= f.submit 'apply' %>
   <% end %>
 </div>
